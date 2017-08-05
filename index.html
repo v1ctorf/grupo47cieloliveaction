@@ -31,6 +31,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 
 </head>
 
@@ -43,9 +44,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <!--<img src="img/logo_live_action.png" class="img-responsive">-->
-                </a>
+             
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,13 +67,14 @@
     <header>
         <div class="header-content">
             <div class="row text-center">
-                <img src="img/logo_live_action.png" style="max-height:300px; height:20%; margin-top:180px;">
+                <img src="img/logo_live_action.png" style="max-height:220px; height:20%; margin-top:180px;">
             </div>
             <div class="header-content-inner">
-                <h1 id="homeHeading">Em um final de semana, você dará um novo salto na sua vida!</h1>
+                <h2 id="homeHeading" style="font-weight:bold;">Em um final de semana, você dará um novo salto na sua vida!</h2>
                 <hr>
-                <p style="color:white; font-weight:bold;">Todas aquelas pessoas fodas que conheceu e que hojem fazem parte da sua história? Chegou a hora de amplificar aquela experiência! A Gama criou o Gama Camp que promove toda a interação entre gerações do XP, para que você possa desenvolver novas habilidades.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Saiba Mais</a>
+                <p style="color:white; font-weight:bold;">
+                    Todas aquelas pessoas fodas que conheceu e que hoje fazem parte da sua história? Chegou a hora de amplificar aquela experiência! A Gama criou o Gama Camp que promove toda a interação entre gerações do XP, para que você possa desenvolver novas habilidades.</p>
+               
             </div>
         </div>
     </header>
@@ -92,10 +92,13 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="about">
-        <div class="col-md-6 col-md-offset-3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/b6NMEnhL7lU" frameborder="0" allowfullscreen></iframe>
-          </div>
+    <section class="bg-success" id="about">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/b6NMEnhL7lU" frameborder="0" allowfullscreen></iframe>
+              </div>
+            
+        </div>
     </section>
 
  
@@ -118,10 +121,11 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                        <h2 class="section-heading text-center">Inscrição</h2>
                 <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
-                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Inscrição</h2>
-                    <hr class="primary">
+                     <div class="col-lg-8 col-lg-offset-2">
+                        <hr class="primary">
+                        
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nome</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nome">
@@ -130,13 +134,24 @@
                             <label for="exampleInputEmail1">Sobrenome</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Sobrenome">
                           </div>
+                          
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                           </div>
+                          
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Qual treinamento você participou?</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Treinamento">
+                                
+                          </div>
+                          
                             <input type="hidden" name="code" value="5A42BEFF54542DBEE41A0F8ADF7148BD" />
                             <input type="hidden" name="iot" value="button" />
+                    </div>
+                    <div class="row text-center">
                             <input type="submit" class="btn btn-success" value="Registrar-se">
+                        
                     </div>
                     </form>
                 </div>               
